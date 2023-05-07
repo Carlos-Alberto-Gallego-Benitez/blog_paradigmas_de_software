@@ -94,7 +94,7 @@
 		font-size:18px;
 	}
 	h1, h2 {
-		font-size:48px;
+		font-size:20px;
 	}
 	.counter-box {
 		font-size:13px;
@@ -131,7 +131,7 @@
 }
 @media only screen and (max-width: 991px) {
 	.welcome-box {
-		padding: 150px 0px;
+		padding: 120px 0px;
 	}
 	.navbar-nav li a {
 		font-size:13px;

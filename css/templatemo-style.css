@@ -131,24 +131,26 @@ figure {
 
 video {
   position: fixed;
-  right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  right: -500px;
+  top: -106px;
 }
 #video:after {
-  content: '';
-  opacity: 0.75;
-  background: #4096ee; /* Old browsers */
-  background: -moz-linear-gradient(top, #4096ee 0%, #39ced6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #4096ee 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #4096ee 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 ); /* IE6-9 */
-  position:fixed;
-  left:0;
-  top:0;
-  right:0;
-  bottom: 0;
+content: '';
+    opacity: 0.75;
+    background: #cacfd5;
+    background: -moz-linear-gradient(top, #4096ee 0%, #39ced6 100%);
+    /* background: -webkit-linear-gradient(top, #4096ee 0%,#39ced6 100%); */
+    background: linear-gradient(to bottom, #989fa7 0%,#39ced6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 );
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
 }
 .wrapper-background-dark:after {
   background: #222;
@@ -303,12 +305,20 @@ video {
   top:0;
   z-index:999;
 }
+#footer {
+  padding:20px 0;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom: 0;
+  z-index:999;
+}
 .container-fluid {
   padding:0 20px;
 }
 a#logo {
   text-decoration: none;
-  font-size: 32px;
+  /*font-size: 32px;*/
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -344,6 +354,22 @@ a#logo {
   -webkit-transform:scale(0);
   transform:scale(0);
   margin-top: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 800px;
+    position: absolute;
+}
+.justify{
+  text-align: justify;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+    background: #dddddd;
 }
 .navbar-nav li a:hover:after, .navbar-nav li.active a:after{
   -webkit-transform:scale(1);
